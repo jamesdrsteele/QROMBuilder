@@ -4,10 +4,8 @@ This repository contains a rudimentary QROM Builder that takes a function, defin
 
 ## Description
 
-This notebook walks through the develop of a QROM function; a Qiskit function that, in essence, takes a boolean function, a linear transformation of $\mathbb{F}_2:= \mathbb{Z}/2\mathbb{Z}$ vector spaces 
-$$ f: \mathbb{F}_2^n \rightarrow \mathbb{F}_2^d,$$ 
-and outputs an associated quantum circuit $U$. The circuit must act as an oracle, performing the following operation: 
-$$ U|x\rangle_n|0\rangle_d = |x\rangle_n |f(x)\rangle_d. $$ 
+This notebook walks through the develop of a QROM function; a Qiskit function that, in essence, takes a boolean function f 
+and outputs an associated quantum circuit U. 
 
 We will do one of the `straightforward' implementation of the task, by creating a function 'build_qrom' that takes in the function input as a dictionary, effectively describing the truth table of the function, and then translating this information into an equivalent quantum circuit. 
 
